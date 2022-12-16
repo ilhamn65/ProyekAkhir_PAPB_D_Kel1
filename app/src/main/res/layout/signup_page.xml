@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="">
+
+    <ImageView
+        android:id="@+id/signup_logo"
+        android:layout_marginTop="159dp"
+        android:layout_width="308dp"
+        android:layout_height="80dp"
+        android:src="@drawable/login_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/signup_daftar"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="210dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/signup_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_marginTop="20dp"
+        android:layout_width="284dp"
+        android:layout_height="41dp"
+        android:background="@drawable/login_email"
+        app:layout_constraintTop_toBottomOf="@+id/signup_daftar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_marginTop="18dp"
+        android:layout_width="284dp"
+        android:layout_height="41dp"
+        android:background="@drawable/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_marginTop="18dp"
+        android:layout_width="284dp"
+        android:layout_height="41dp"
+        android:background="@drawable/signup_username"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/signup_btndaftar"
+        android:layout_marginTop="10dp"
+        android:layout_width="284dp"
+        android:layout_height="54dp"
+        android:background="@drawable/signup_btndaftar"
+        app:layout_constraintTop_toBottomOf="@+id/signup_username"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/signup_atau"
+        android:layout_marginTop="22dp"
+        android:layout_width="143dp"
+        android:layout_height="23dp"
+        android:text="Atau, masuk dengan ..."
+        android:textSize="13dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btndaftar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/signup_anda"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anda sudah memiliki akun?"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btndaftar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/signup_masuk"
+        android:layout_width="49.81dp"
+        android:layout_height="23dp"
+        android:background="@drawable/login_daftar"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btndaftar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
